@@ -1,0 +1,6 @@
+# Force GitHub Linguist to detect C# as the primary language
+*.cs linguist-language=C#
+*.csproj linguist-language=XML
+*.sql linguist-detectable=false
+*.sln linguist-detectable=false
+*.json linguist-documentation=true

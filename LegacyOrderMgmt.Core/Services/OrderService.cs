@@ -87,6 +87,17 @@ namespace LegacyOrderMgmt.Core.Services
             CacheOrder(order);
         }
 
+        public void StartProcessingOrder(int orderId)
+        {
+            var order = _db.Orders.Find(orderId);
+            if (order == null) return;
+            if (order.Status == 3 || order.Status == 4 || order.Status == 5) return;
+
+            order.Status = 2;
+            order.UpdatedAt = DateTime.Now;
+            _db.SaveChanges();
+        }
+
         public void ShipOrder(int orderId, string trackingNumber, string carrier)
         {
             var order = _db.Orders
@@ -94,6 +105,12 @@ namespace LegacyOrderMgmt.Core.Services
                 .FirstOrDefault(o => o.Id == orderId);
 
             if (order == null) return;
+            if (order.Status < 2)
+            {
+                order.Status = 2;
+                order.UpdatedAt = DateTime.Now;
+                _db.SaveChanges();
+            }
 
             var shipment = new Shipment
             {

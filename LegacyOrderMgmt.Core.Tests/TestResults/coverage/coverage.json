@@ -1,0 +1,637 @@
+{
+  "LegacyOrderMgmt.Core.dll": {
+    "D:\\Demo\\AI-SWE-Summit\\demo\\repos\\demo-legacy-order-mgmt\\LegacyOrderMgmt.Core\\Services\\OrderService.cs": {
+      "LegacyOrderMgmt.Core.Services.OrderService": {
+        "System.Collections.Generic.List`1<LegacyOrderMgmt.Core.Models.Order> LegacyOrderMgmt.Core.Services.OrderService::GetOrdersByCustomer(System.Int32)": {
+          "Lines": {
+            "28": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": []
+        },
+        "LegacyOrderMgmt.Core.Models.Order LegacyOrderMgmt.Core.Services.OrderService::GetOrderById(System.Int32)": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<LegacyOrderMgmt.Core.Models.Order> LegacyOrderMgmt.Core.Services.OrderService::GetPendingOrders()": {
+          "Lines": {
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": []
+        },
+        "LegacyOrderMgmt.Core.Models.Order LegacyOrderMgmt.Core.Services.OrderService::CreateOrder(System.Int32,System.String)": {
+          "Lines": {
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0
+          },
+          "Branches": []
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.OrderService::ConfirmOrder(System.Int32)": {
+          "Lines": {
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "83": 0,
+            "84": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0
+          },
+          "Branches": [
+            {
+              "Line": 77,
+              "Offset": 39,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 83,
+              "Offset": 74,
+              "EndOffset": 76,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 83,
+              "Offset": 74,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 83,
+              "Offset": 86,
+              "EndOffset": 88,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 83,
+              "Offset": 86,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 77,
+              "Offset": 39,
+              "EndOffset": 157,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.OrderService::StartProcessingOrder(System.Int32)": {
+          "Lines": {
+            "91": 1,
+            "92": 1,
+            "93": 1,
+            "94": 1,
+            "96": 1,
+            "97": 1,
+            "98": 1,
+            "99": 1
+          },
+          "Branches": [
+            {
+              "Line": 93,
+              "Offset": 39,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 94,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 94,
+              "Offset": 59,
+              "EndOffset": 61,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 94,
+              "Offset": 50,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 59,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 75,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 93,
+              "Offset": 39,
+              "EndOffset": 111,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 94,
+              "Offset": 75,
+              "EndOffset": 111,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.OrderService::ShipOrder(System.Int32,System.String,System.String)": {
+          "Lines": {
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "131": 0,
+            "132": 0
+          },
+          "Branches": [
+            {
+              "Line": 107,
+              "Offset": 194,
+              "EndOffset": 201,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 108,
+              "Offset": 214,
+              "EndOffset": 216,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 108,
+              "Offset": 214,
+              "EndOffset": 250,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 194,
+              "EndOffset": 414,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<LegacyOrderMgmt.Core.Models.Order> LegacyOrderMgmt.Core.Services.OrderService::GetOrdersForDateRange(System.DateTime,System.DateTime)": {
+          "Lines": {
+            "135": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "142": 0,
+            "143": 0
+          },
+          "Branches": []
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.OrderService::CacheOrder(LegacyOrderMgmt.Core.Models.Order)": {
+          "Lines": {
+            "147": 0,
+            "148": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "155": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0
+          },
+          "Branches": []
+        },
+        "LegacyOrderMgmt.Core.Models.Order LegacyOrderMgmt.Core.Services.OrderService::GetCachedOrder(System.Int32)": {
+          "Lines": {
+            "167": 0,
+            "168": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "178": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0
+          },
+          "Branches": [
+            {
+              "Line": 171,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 171,
+              "Offset": 36,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String LegacyOrderMgmt.Core.Services.OrderService::GenerateOrderNumber()": {
+          "Lines": {
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0
+          },
+          "Branches": [
+            {
+              "Line": 192,
+              "Offset": 81,
+              "EndOffset": 83,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 192,
+              "Offset": 81,
+              "EndOffset": 86,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.OrderService::.ctor(LegacyOrderMgmt.Core.Data.OrderDbContext)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.OrderService::.cctor()": {
+          "Lines": {
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\Demo\\AI-SWE-Summit\\demo\\repos\\demo-legacy-order-mgmt\\LegacyOrderMgmt.Core\\Services\\PricingEngine.cs": {
+      "LegacyOrderMgmt.Core.Services.PricingEngine": {
+        "System.Decimal LegacyOrderMgmt.Core.Services.PricingEngine::CalculateDiscount(LegacyOrderMgmt.Core.Models.Order,System.String)": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "29": 1,
+            "31": 1,
+            "32": 2,
+            "33": 2,
+            "34": 2,
+            "35": 2,
+            "36": 2,
+            "37": 2,
+            "38": 1,
+            "40": 1,
+            "41": 0,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 110,
+              "EndOffset": 112,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 110,
+              "EndOffset": 121,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 32,
+              "Offset": 6,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 28,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 66,
+              "EndOffset": 68,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 89,
+              "EndOffset": 91,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 89,
+              "EndOffset": 94,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 66,
+              "EndOffset": 109,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 107,
+              "EndOffset": 109,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 123,
+              "EndOffset": 125,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 123,
+              "EndOffset": 165,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 6,
+              "EndOffset": 168,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 28,
+              "EndOffset": 168,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 50,
+              "EndOffset": 168,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 107,
+              "EndOffset": 168,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Decimal LegacyOrderMgmt.Core.Services.PricingEngine::CalculateLineTotal(System.Int32,System.Decimal,System.Decimal)": {
+          "Lines": {
+            "48": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1
+          },
+          "Branches": []
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.PricingEngine::RecalculateOrderTotals(LegacyOrderMgmt.Core.Models.Order,System.String)": {
+          "Lines": {
+            "56": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "72": 0
+          },
+          "Branches": [
+            {
+              "Line": 58,
+              "Offset": 64,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 64,
+              "EndOffset": 66,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<LegacyOrderMgmt.Core.Models.PricingRule> LegacyOrderMgmt.Core.Services.PricingEngine::LoadRules()": {
+          "Lines": {
+            "76": 1,
+            "77": 1,
+            "78": 0,
+            "81": 1,
+            "83": 1,
+            "84": 1,
+            "85": 1,
+            "86": 1
+          },
+          "Branches": [
+            {
+              "Line": 77,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 77,
+              "Offset": 6,
+              "EndOffset": 44,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 77,
+              "Offset": 47,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 77,
+              "Offset": 47,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.PricingEngine::.ctor(LegacyOrderMgmt.Core.Data.OrderDbContext)": {
+          "Lines": {
+            "19": 2,
+            "20": 2,
+            "21": 2,
+            "22": 2
+          },
+          "Branches": []
+        },
+        "System.Void LegacyOrderMgmt.Core.Services.PricingEngine::.cctor()": {
+          "Lines": {
+            "17": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

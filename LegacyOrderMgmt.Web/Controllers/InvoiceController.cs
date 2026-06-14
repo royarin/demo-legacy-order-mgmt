@@ -13,12 +13,18 @@ namespace LegacyOrderMgmt.Web.Controllers
         private readonly OrderDbContext _db;
         private readonly InvoiceService _invoiceService;
         private readonly NotificationService _notificationService;
+        private readonly ReportExportService _reportExportService;
 
-        public InvoiceController(OrderDbContext db, InvoiceService invoiceService, NotificationService notificationService)
+        public InvoiceController(
+            OrderDbContext db,
+            InvoiceService invoiceService,
+            NotificationService notificationService,
+            ReportExportService reportExportService)
         {
             _db = db;
             _invoiceService = invoiceService;
             _notificationService = notificationService;
+            _reportExportService = reportExportService;
         }
 
         public IActionResult Index(string paymentStatus)
@@ -85,6 +91,16 @@ namespace LegacyOrderMgmt.Web.Controllers
             var sql = "SELECT * FROM Invoices WHERE PaymentStatus = 'Pending' AND DueDate < '" + today + "'";
             var overdue = _db.Invoices.FromSql(sql).Include(i => i.Order).ToList();
             return View(overdue);
+        }
+
+        [HttpGet("reports/sales-csv")]
+        public IActionResult SalesCsv(DateTime? from, DateTime? to)
+        {
+            var fromDate = from ?? DateTime.Now.AddDays(-30);
+            var toDate = to ?? DateTime.Now;
+            var csv = _reportExportService.GenerateSalesReportCsv(fromDate, toDate);
+            var fileName = $"sales_{fromDate:yyyyMMdd}_{toDate:yyyyMMdd}.csv";
+            return File(csv, "text/csv", fileName);
         }
     }
 }

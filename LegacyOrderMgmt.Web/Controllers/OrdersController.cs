@@ -128,16 +128,28 @@ namespace LegacyOrderMgmt.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Ship(int id, string trackingNumber, string carrier)
+        public IActionResult Process(int id)
         {
+            _orderService.StartProcessingOrder(id);
+            return RedirectToAction("Details", new { id });
+        }
+
+        [HttpPost]
+        public IActionResult Ship(int id, string trackingNumber, string carrier, string warehouseCode)
+        {
+            _orderService.StartProcessingOrder(id);
             _orderService.ShipOrder(id, trackingNumber, carrier);
 
             // Legacy: sync HTTP call to shipping integration — blocks the request thread
             var order = _orderService.GetOrderById(id);
+            var resolvedWarehouseCode = string.IsNullOrWhiteSpace(warehouseCode) ? "MAIN" : warehouseCode;
+            var warehouseNotified = _shippingService.NotifyWarehouse(id, resolvedWarehouseCode);
             var result = _shippingService.RegisterShipmentWithCarrier(trackingNumber, carrier, order);
 
             if (!result)
                 TempData["Warning"] = "Order shipped locally but carrier registration failed.";
+            if (!warehouseNotified)
+                TempData["Warning"] = "Order shipped, but warehouse notification failed.";
 
             _notificationService.SendShippingNotification(order);
 
